@@ -1,3 +1,6 @@
+*{
+    font-family: cursive;
+}
 h1{
     text-align: center;
 }
@@ -51,10 +54,18 @@ animation-play-state */
 /* Percent Keyframes */
 
 .percent{
+    margin-left: 20%;
+    margin-bottom: 500px;
     height: 250px;
     width: 250px;
     position: relative;
-    animation: unrivalledking2 3s linear 0s 4 normal forwards;
+    animation: unrivalledking2 3s linear 0s infinite normal forwards;
+}
+.percent::after{
+    content: "This is it";
+    color: white;
+    font-size: 20px;
+    margin-left: 70px;
 }
 
 @keyframes unrivalledking2 {
@@ -62,25 +73,30 @@ animation-play-state */
         background-color: red;
         top: 0;
         left: 0;
+        rotate: 0deg;
     }
     25%{
         background-color: rgba(255, 0, 0, 0.5);
         top: 0;
         left: 250px;
+        rotate: 90deg;
     }
     50%{
         background-color: orange;
         top: 250px;
+        rotate: 180deg;
         left: 250px;
     }
     75%{
         background-color: rgba(255, 166, 0, 0.5);
         top: 250px;
+        rotate: 270deg;
         left: 0px;
     }
     100%{
         background-color: red;
         top: 0px;
+        rotate: 360deg;
         left: 0px;
     }
 }
