@@ -1,0 +1,86 @@
+h1{
+    text-align: center;
+}
+
+
+/* all css animation properties */
+
+/* animation-name
+animation-duration
+animation-timing-function
+animation-delay
+animation-iteration-count
+animation-direction
+animation-fill-mode
+animation-play-state */
+
+/* CSS animations shorthand property  */
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+/* From To Transitions */
+
+.from_to{
+    height: 250px;
+    width: 250px;
+    animation-name: unrivalledking;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 10;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    /* CSS animations shorthand property  */
+    /* animation: unrivalledking 1s ease-in 0 4 alternate forwards; */
+}
+/* 
+@keyframes identifier (write animation name instead of identifier) {
+    
+} */
+
+@keyframes unrivalledking {
+    from{
+    background-color: red;
+    margin-left: 0;
+    }
+    to{
+        background-color: orange;
+        margin-left: 30%;
+    }
+}
+
+/* Percent Keyframes */
+
+.percent{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    animation: unrivalledking2 3s linear 0s 4 normal forwards;
+}
+
+@keyframes unrivalledking2 {
+    0%{
+        background-color: red;
+        top: 0;
+        left: 0;
+    }
+    25%{
+        background-color: rgba(255, 0, 0, 0.5);
+        top: 0;
+        left: 250px;
+    }
+    50%{
+        background-color: orange;
+        top: 250px;
+        left: 250px;
+    }
+    75%{
+        background-color: rgba(255, 166, 0, 0.5);
+        top: 250px;
+        left: 0px;
+    }
+    100%{
+        background-color: red;
+        top: 0px;
+        left: 0px;
+    }
+}
